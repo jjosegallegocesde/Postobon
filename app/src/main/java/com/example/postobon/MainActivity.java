@@ -38,15 +38,12 @@ public class MainActivity extends AppCompatActivity {
                 if(horasDigitadas<=40){
                     int salario=horasDigitadas*20000;
                     cajaResultado.setText("Su salario fue de: $"+salario);
-
                 }else{
                     int salarioBase=800000;
                     int numeroHorasExtra=horasDigitadas-40;
                     int salario=salarioBase+(numeroHorasExtra*25000);
                     cajaResultado.setText("Su salario fue de: $"+salario);
                 }
-
-
             }
         });
 
