@@ -23,7 +23,7 @@ public class ListaAdaptador extends RecyclerView.Adapter<ListaAdaptador.viewHold
     @Override
     public ListaAdaptador.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View vistaDelItemLista= LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_lista,null,false);
+                .inflate(R.layout.item_lista,parent,false);
 
         return new viewHolder(vistaDelItemLista);
     }
