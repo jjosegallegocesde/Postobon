@@ -12,12 +12,21 @@
         android:id="@+id/logotipo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/postobon"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_bias="0.05"/>
+
+    <TextView
+        android:id="@+id/nombreEmpleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintTop_toBottomOf="@id/logotipo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <EditText
         android:id="@+id/numeroHoras"
@@ -25,7 +34,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/texto_horas"
         app:layout_constraintVertical_bias="0"
-        app:layout_constraintTop_toBottomOf="@id/logotipo"
+        app:layout_constraintTop_toBottomOf="@id/nombreEmpleado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>

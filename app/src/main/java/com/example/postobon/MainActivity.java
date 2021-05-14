@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +17,12 @@ public class MainActivity extends AppCompatActivity {
     TextView cajaResultado;
     Button botonCalcular;
     int horasDigitadas;
+    Trabajador trabajador;
+
+    ImageView fotoEmpleado;
+    TextView nombre;
+
+
 
     //METODOS(FUNCIONES)
     @Override
@@ -27,8 +34,21 @@ public class MainActivity extends AppCompatActivity {
         cajaHoras=findViewById(R.id.numeroHoras);
         cajaResultado=findViewById(R.id.resultado);
         botonCalcular=findViewById(R.id.botonCalcular);
+        fotoEmpleado=findViewById(R.id.logotipo);
+        nombre=findViewById(R.id.nombreEmpleado);
 
-        //3. utilizo el escuchador de eventos
+
+
+        //3. Enlazar el atributo trabajador con los datos que llegan del adaptador
+        trabajador =(Trabajador)getIntent().getSerializableExtra("datosTrabajador");
+
+
+        //4. Utilizar los datos del trabajador para cargar los recursos graficos de la actividad
+        fotoEmpleado.setImageResource(trabajador.getFotoTrabajador());
+        nombre.setText(trabajador.getNombreTrabajador());
+
+
+        //5. utilizo el escuchador de eventos
         botonCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,5 +1,6 @@
 package com.example.postobon;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,6 +53,19 @@ public class ListaAdaptador extends RecyclerView.Adapter<ListaAdaptador.viewHold
         public void actualizarDatos(Trabajador trabajador) {
             nombreTrabajador.setText(trabajador.getNombreTrabajador());
             fotoTrabajador.setImageResource(trabajador.getFotoTrabajador());
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent = new Intent(itemView.getContext(),MainActivity.class);
+                    intent.putExtra("datosTrabajador",trabajador);
+                    itemView.getContext().startActivity(intent);
+
+                }
+            });
+
+
         }
     }
 }
