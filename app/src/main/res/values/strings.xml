@@ -2,4 +2,16 @@
     <string name="app_name">Postobon</string>
     <string name="texto_horas">Digite el número de horas:</string>
     <string name="texto_boton_calcular">Calcular</string>
+
+    <string name="opcion1">Acerca de</string>
+    <string name="opcion2">Ingles</string>
+    <string name="opcion3">Español</string>
+
+
+
+
+    <string name="descripcion">Mi nombre es Juan José Gallego Mesa, soy ingeniero electrónico de la Universidad de Antioquia e ingeniero de Telecomunicaciones del Instituto tecnológico metropolitano,
+        cuento con una especialización en formulación y evaluación de proyectos de esta misma institución y distintos seminarios y diplomados en pedagogía.
+        Me apasionan el desarrollo de software y la docencia desde muy joven, teniendo la oportunidad de aplicar mis conocimientos en instituciones como: Seguros Sura,
+        el servicio nacional de aprendizaje-SENA, el metro de Medellín y la secretaría de educación de Medellín.</string>
 </resources>

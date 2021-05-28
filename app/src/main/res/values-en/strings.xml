@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name">Postobon</string>
+    <string name="texto_horas">type the number of hours:</string>
+    <string name="texto_boton_calcular">calculate:</string>
+
+    <string name="opcion1">about us</string>
+    <string name="opcion2">English</string>
+    <string name="opcion3">Spanish</string>
+
+
+
+    <string name="descripcion">My name is Juan José Gallego Mesa, I am an electronic engineer from the University of Antioquia and a Telecommunications engineer from the Metropolitan Technological Institute,
+        I have a specialization in formulation and evaluation of projects from this same institution and different seminars and diplomas in pedagogy.
+        I am passionate about software development and teaching from a very young age, having the opportunity to apply my knowledge in institutions such as: Seguros Sura,
+        the national learning service-SENA, the Medellín metro and the Medellín secretariat of education.</string>
+
+
+
+
+</resources>
